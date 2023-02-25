@@ -1,0 +1,35 @@
+public class SequenciaFibonacci {  
+ 
+    public integer fibonacci(integer n){
+         
+         if(n == 1){
+          return 0;
+            } if (n == 2){
+          return 1;
+           	}else{
+          return fibonacci(n - 1) + fibonacci(n - 2);
+          }
+        }
+       Public void inicio(){
+         integer n = 6;
+           System.debug('Digite o numero inteiro?');
+         if ( n >= 0 ){
+             System.debug('A posição ' + n + ' armazena  a sequencia fibonacci de ' + fibonacci(n));    
+         }else{
+             System.debug('O número não pode ser negativo');   
+    }
+  }      
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// APEX CODE :
+
+SequenciaFibonacci i = new SequenciaFibonacci();
+i.inicio();
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Login e senha da minha Org: 
+//Login: euroberta.cog33@gmail.developer
+// Senha : Goiaba123#
