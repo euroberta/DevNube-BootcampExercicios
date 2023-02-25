@@ -1,70 +1,25 @@
-//Renato desde que você nos passou  a sequência de Fibonacci venho estudando o assunto. Então esse exercicio é fruto de estudos pessoais. 
-//Quaisquer duvida sobre a resolução pode falar comigo.
-
-<-- A sequência de Fibonacci é uma sequência de números inteiros que começa com 0 e 1, e em que cada número subsequente é a soma dos dois números anteriores na sequência. 
-A sequência continua infinitamente, sendo os primeiros números da sequência: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, etc. A sequência é nomeada em homenagem
-ao matemático italiano Leonardo Fibonacci, que a descreveu pela primeira vez no século XIII em seu livro Liber Abaci. A sequência de Fibonacci tem muitas propriedades
-interessantes e é encontrada em muitas áreas da matemática e da ciência, incluindo a biologia, a teoria dos jogos e a análise técnica do mercado financeiro.
-
-
-Escreva um algoritmo em pseudocódigo para calcular o n-ésimo número da sequência de Fibonacci, usando uma abordagem recursiva. O algoritmo deve receber como entrada 
-um número inteiro n, representando a posição do número na sequência de Fibonacci, e retornar o valor correspondente a essa posição. Certifique-se de incluir
-tratamento de erro para o caso em que o usuário insira um número negativo como entrada.-->
-
-    
- // Declarei n como uma variavel inteira, poderia ter passado como parametro na função.
-    
-    n : inteiro
- 
- // Aqui fiz uma função com retorno de um inteiro. Retornará o valor da posição da sequência de Fibonacci. 
-
-	
-	funcao inteiro fibonacci()
- 
- //A primeira posição irá retorna 0 na sequência de Fibonacci. 
-  
-     
-     se(n = 1)
-      retorne 0
-
- //A segunda posição irá retorna 1 na "sequência de Fibonacci.   
-    	  senao
-      		se(n = 2)
-        	  retorne 1 
-
- // Se o usuario não colocar nenhuma posicões anteriores, irá fazer o calculo a seguir :
- // n como posição
- // n = (n - 1) + (n - 2),
- // Suponhemos que queremos a posição 10 :
- // Decima posição = Decima posição - um ( é igual a nona posição, certo?!) + Decima posição - dois ( é igual a oitava posição)
- // 10 = (10 - 1) + (10 - 2) 
- // 10 = ( 9 ) + ( 8 )
-  // Porque todo n-ésimo número e a soma dos dois ultimos anteiores. É o que essa função "retorne" do senao, esta representando:
-    	 
-    	 senao
-        	retorne fibonacci(n - 1) + fibonacci(n - 2)
-    fimse 
-      fimse 
-        fimse 
-       fimse 
-
-// função resultado pedir um número ao usuario.
-	funcao resultado()
-  
-     n : inteiro
-    
-    escreva("Digite um numero inteiro: ")
-    leia(n)
-    
-    se n > 0 entao
-     
-     // fibonacci(n) chama toda a função anterior.
-     
-    	escreva("O número ", n, " é: ", fibonacci(n))
-     senao 
-         se n < 0 entao
-    	escreva("O número não pode ser negativo")
-     
-     fimse
-   fimse
+Inicio 
+funcao inteiro fibonacci() 
+n : inteiro
+se(n = 1)
+retorne 0
+senao
+se(n = 2)
+retorne 1  	 
+senao
+retorne fibonacci(n - 1) + fibonacci(n - 2)
+fimse 
+fimse 
+fimfuncao
+funcao resultado(n  inteiro)  
+escreva("Digite um numero inteiro: ")
+leia(n)  
+se (n > 0) entao 
+escreva("A posição " + n + " armazena a sequencia de Fibonacci " + fibonacci(n))
+senao 
+se (n < 0) entao
+escreva("O número não pode ser negativo!")
+fimse
+fimse
+fimfuncao
 fim 
