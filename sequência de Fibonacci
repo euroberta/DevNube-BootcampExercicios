@@ -1,25 +1,15 @@
 Inicio 
 funcao inteiro fibonacci() 
-n : inteiro
-se(n = 1)
-retorne 0
+se(n < 0)
+retorne null
+senao(n = 0)
+retorne 0    
+senao(n = 1)
+retorne 1
 senao
-se(n = 2)
-retorne 1  	 
-senao
-retorne fibonacci(n - 1) + fibonacci(n - 2)
+fibonacci(n - 1) + fibonacci(n - 2)
 fimse 
 fimse 
-fimfuncao
-funcao resultado(n  inteiro)  
-escreva("Digite um numero inteiro: ")
-leia(n)  
-se (n > 0) entao 
-escreva("A posição " + n + " armazena a sequencia de Fibonacci " + fibonacci(n))
-senao 
-se (n < 0) entao
-escreva("O número não pode ser negativo!")
 fimse
-fimse
+fimse  
 fimfuncao
-fim 
