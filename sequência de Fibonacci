@@ -1,0 +1,15 @@
+Inicio 
+funcao inteiro fibonacci() 
+se(n < 0)
+retorne null
+senao(n = 0)
+retorne 0    
+senao(n = 1)
+retorne 1
+senao
+fibonacci(n - 1) + fibonacci(n - 2)
+fimse 
+fimse 
+fimse
+fimse  
+fimfuncao
